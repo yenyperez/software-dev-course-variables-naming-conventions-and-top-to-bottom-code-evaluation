@@ -24,9 +24,20 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+// Main information
+let customerName = "Alice";
+let itemsPurchased = 5;
+let pricePerItem = 4;
+let storeName = "Marcela's Market";
 
-console.log(d);
+// Calculate the total automatically
+let totalAmount = pricePerItem * itemsPurchased;
+
+// Build the complete purchase message
+let purchaseMessage = customerName + " bought "+
+ itemsPurchased + " items at " + storeName + " for a total of $ " +
+ totalAmount + ".";
+
+ //Display the message in the conosole
+console.log(purchaseMessage);
+
